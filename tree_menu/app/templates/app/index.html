@@ -1,0 +1,9 @@
+{% load custom_tags %}
+<h2><a href="{% url 'main_menu' %}">На главную</a></h2>
+{% for menu in menus %}
+    <li><a href='{{menu.name}}/'>{{ menu.name }}</a></li>
+{% endfor %}
+{% draw_menu 'first_menu' menu_item %}
+{% draw_menu 'second_menu' menu_item %}
+{% draw_menu 'third_menu' menu_item %}
+{% draw_menu 'forth_menu' menu_item %}
