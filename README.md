@@ -67,7 +67,7 @@
 
 1. Клонируйте репозиторий с GitHub и введите данные для переменных окружения (значения даны для примера, но их можно оставить):
 ```bash
-git clone https://github.com/alexpro2022/Django-tree_menu.git && \
+git clone https://github.com/MrMrMops/Django_tree_menu.git && \
 cd Django_tree_menu && \
 cp env_example .env && \
 nano .env
@@ -123,6 +123,7 @@ docker compose -f docker/docker-compose.yml down -v
 
 При первом запуске будут автоматически произведены следующие действия:
   - выполнены миграции БД
+  - БД заполнена начальными данными
   - собрана статика
   - создан суперюзер (пользователь с правами админа) с учетными данными:
       - для Django: username = 'adm', password = 'adm' - значения можно изменить в `tree_menu\app\management\commands\create_superuser.py`
